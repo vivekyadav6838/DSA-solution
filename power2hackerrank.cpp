@@ -15,15 +15,15 @@ bool is_power(int n)
 }
 int next_powerof2(int n)
  {
-   int num=0;
+   int mnum=0;
       for(int i=0;i<30;i++)
        { 
              if(pow(2,i)<n)
-           num=pow(2,i);
+           mnum=pow(2,i);
        }
            
        
-       return num;
+       return mnum;
      
  }
 
