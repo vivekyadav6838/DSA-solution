@@ -42,6 +42,6 @@ int main()
            }
        }
    }
-   cout<<char(dp[n][s])<<endl;
+   cout<<(dp[n][s])<<endl;
 
 }
