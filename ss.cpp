@@ -3,21 +3,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Function to print all sub strings
+
 void subString(string s, int n)
-{
-	// Pick starting point in outer loop
-	// and lengths of different strings for
-	// a given starting point
+{ int arr[n];
+	
 	for (int i = 0; i < n; i++)
 		for (int len = 1; len <= n - i; len++)
-			 s.substr(i, len) << endl;
+			cout << s.substr(i, len) << endl;
 }
 
 // Driver program to test above function
 int main()
 {
-	string s = "abc";
+	string s = "417";
 	subString(s,s.length());
 	return 0;
 }
