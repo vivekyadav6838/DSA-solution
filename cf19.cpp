@@ -9,36 +9,44 @@ int main()
     cout<<s<<endl;
     else{
     int arr[n/2];
-    string s2;
+   // string s2;
     int k=0;
+    vector<int>v;
     for(int i=0;i<n;i++)
     {
-        if(s[i]!='+'){
-        arr[k]= int(s[i]);
-        k++;
+        if(s[i]=='+')
+        {
+            v.push_back(0);
         }
-
+        else{
+            v.push_back(int(s[i]));
+        }
     }
-    sort(arr,arr+n);
-    // for(int i=0;i<n;i++)
-    // {
-    //     cout<<int(arr[i]);
-    // }
-    
-    for(int i=0;i<=n/2;i++)
+    if(v[n-1]==0)
     {
-        s2 +=char(arr[i]);
-        if(i!=n/2)
-        s2+='+';
-        
-        
+        v.pop_back();
     }
-    
-    
+    sort(v.begin(),v.end());
+    string s2;
+    for(int i=0;i<n;i++)
+    {
+        if(v[i]==0)
+        {
+            s2+='+';
+        }
+        else{
+            s2+=char(v[i]);
+        }
+    }
     cout<<s2<<endl;
-    }
+        
+
+}
+
+   
+}
 
     
     
     
-    }
+    

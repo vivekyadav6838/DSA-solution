@@ -42,7 +42,7 @@ int main(){
     		int u, v;
     		cin >> u >> v;
     		adj[u].push_back(v);
-    // 		adj[v].push_back(u); // uncomment this for undirected graoh 
+    	adj[v].push_back(u); // uncomment this for undirected graoh 
     	}
         // string s1;
         // cin>>s1;
