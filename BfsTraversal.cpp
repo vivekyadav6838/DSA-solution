@@ -26,11 +26,12 @@ public:
 	}
 };
 
-// { Driver Code Starts.
+
+
 int main(){
 	int tc;
 	cin >> tc;
-	// for multiple graphs
+	
 	while(tc--){
 		int V, E;
     	cin >> V >> E;
@@ -42,10 +43,9 @@ int main(){
     		int u, v;
     		cin >> u >> v;
     		adj[u].push_back(v);
-    	adj[v].push_back(u); // uncomment this for undirected graoh 
+    	adj[v].push_back(u); 
     	}
-        // string s1;
-        // cin>>s1;
+       
         Solution obj;
         vector<int>ans=obj.bfsOfGraph(V, adj);
         for(int i=0;i<ans.size();i++){
@@ -54,4 +54,4 @@ int main(){
         cout<<endl;
 	}
 	return 0;
-}  // } Driver Code End
+}  

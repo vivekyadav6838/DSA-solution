@@ -10,6 +10,5 @@ int main()
         cout<<"Jai Shree Ram"<<endl;
 
     }
-    cout<<10%2<<endl;
-    cout<<10/2<<endl;
+   
 }
