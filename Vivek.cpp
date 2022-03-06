@@ -2,13 +2,9 @@
 using namespace std;
 int main()
 {
-    int t;
-    cin>>t;
+    string s;
+    cin>>s;
 
-    while(t--)
-    {
-        cout<<"Jai Shree Ram"<<endl;
-
-    }
-   
+    int a = stoi(s);
+    cout<<a<<endl;
 }
