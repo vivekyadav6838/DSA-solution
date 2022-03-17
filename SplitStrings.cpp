@@ -1,11 +1,11 @@
-// A C/C++ program for splitting a string
-// using strtok()
+
 #include<bits/stdc++.h>
-#include <stdio.h>
-#include <string.h>
+using namespace std;
+
 
 int main()
 {
+	system("cls");
 	string str = "Geeks-for-Geeks";
 
 	// Returns first token
