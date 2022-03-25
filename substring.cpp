@@ -1,20 +1,27 @@
-// C++ program to print all possible
-// substrings of a given string
+
 #include<bits/stdc++.h>
 using namespace std;
 
-// Function to print all sub strings
+
 void subString(string s, int n)
 {
-	// Pick starting point in outer loop
-	// and lengths of different strings for
-	// a given starting point
+	int count=0;
+	vector<set<char>>st;
 	for (int i = 0; i < n; i++)
 		for (int len = 1; len <= n - i; len++)
-			 s.substr(i, len) << endl;
+			st.insert(s.substr(i, len));
+
+	for(int i=0;i<n;i++)
+	{
+		if(st[i].size()==2)
+		{
+          count++;
+		}
+	}
+	cout<<count<<endl;
 }
 
-// Driver program to test above function
+
 int main()
 {
 	string s = "abc";
