@@ -8,7 +8,7 @@ int main()
 int t;
 cin>>t;
 while(t--){
-    int n ,k;
+    int n ,k,f=0;
     cin>>n>>k;
     int arr[n];
     int sum=0;
@@ -17,19 +17,53 @@ while(t--){
         cin>>arr[i];
         
     }
-    sort(arr,arr+n);
-    for(int i=1;i<n-1;i++)
+    unordered_map<int,int>mp;
+    for(int i=0;i<n;i++)
     {
-arr[i]=arr[i]-arr[0];
+        int a= arr[i];
+        if(mp.find(k-a)==mp.end())
+        {
+            mp[arr[i]]++;
+
+        }
+        else{
+            f=1;
+            cout<<"YES"<<endl;
+            break;
+        }
+
     }
 
-    if(sum%k==0)
+
+    // sort(arr,arr+n);
+    // int l=0;
+    // int r=n-1;
+    // int f=0;
+    // while(l<r)
+    // {
+    //     int v = arr[r]-arr[l];
+    //     if(v==k)
+    //     {
+    //         cout<<"YES"<<endl;
+    //         f=1;
+    //         break;
+    //     }
+    //     if(v<k)
+    //     {
+    //         l++;
+
+    //     }
+    //     if(v>k)
+    //     {
+    //         r--;
+    //     }
+    // }
+    if(f==0)
     {
-        cout<<"YES"<<endl;
-    }
-    else{
         cout<<"NO"<<endl;
-    }
+     }
+
+   
 }
     return 0;
 }

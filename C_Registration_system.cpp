@@ -5,17 +5,21 @@
 using namespace std;
 int main()
 {
+map<string,int> f;
 int n;
 cin>>n;
-string s;
-cin>>s;
-int len=1;
-string ans="";
 for(int i=0;i<n;i++)
 {
-    ans.push_back(s[i]);
-    i+=(len++);
+    string s;
+    cin>>s;
+    if(f[s]==0)
+    {
+        cout<<"OK"<<endl;
+    }
+    else{
+        cout<<s<<f[s]<<endl;
+    }
+    f[s]++;
 }
-cout<<ans<<endl;
     return 0;
 }
