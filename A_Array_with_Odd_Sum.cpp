@@ -9,12 +9,22 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
-
-
+    int n;
+    cin>>n;
+    int arr[n];
+    int s=0;
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        s+=arr[i];
+    }
+    if(s%2==0)
+    {
+        cout<<"NO"<<endl;
+    }
+    else{
+        cout<<"YES"<<endl;
+    }
 }
     return 0;
 }

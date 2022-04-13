@@ -9,12 +9,14 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
-
-
+    int x,y;
+    cin>>x>>y;
+    if(x>=y*30){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
 }
     return 0;
 }

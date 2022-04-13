@@ -6,15 +6,17 @@
 using namespace std;
 int main()
 {
-int t;
-cin>>t;
-while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
 
 
-}
+    int n;
+    cin>>n;
+    if(n%2==0)
+    {
+        cout<<"Mahmoud"<<endl;
+    }
+    else{
+        cout<<"Ehab"<<endl;
+    }
+
     return 0;
 }

@@ -9,11 +9,16 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
+    int n;
+    cin>>n;
+    int c=1;
+   while(n>4)
+   {
+       c++;
+       n-=4;
 
+   }
+   cout<<c<<endl;
 
 }
     return 0;

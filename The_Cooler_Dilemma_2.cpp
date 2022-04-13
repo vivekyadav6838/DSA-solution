@@ -9,12 +9,21 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
-
-
+    int x,y;
+    cin>>x>>y;
+    int c=0;
+    int dy=y;
+    while(x<=dy)
+    {
+        x=y-x;
+        c++;
+        y=y-x;
+    }
+   // if(y%x<y)
+    cout<<c<<endl;
+   // else{
+        //cout<<"0"<<endl;
+   // }
 }
     return 0;
 }

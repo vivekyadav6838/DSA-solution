@@ -9,11 +9,10 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
-
+    int n,m;
+    cin>>n>>m;
+    int i=1,j=2;
+    while(!__gcd(i,j)>1 && )
 
 }
     return 0;

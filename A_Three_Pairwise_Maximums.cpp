@@ -9,12 +9,16 @@ int main()
 int t;
 cin>>t;
 while(t--){
-   int a,b,c,d;
-   cin>>a>>b>>c>>d;
-   cout<<b<<" "<<c<<" "<<c<<endl;
-   
-
-
+    int x,y,z;
+    cin>>x>>y>>z;
+    if(x==max(x,y)  && y==max(x,z) && z ==max(y,z))
+    {
+        cout<<"YES"<<endl;
+        cout<<x<<" "<<y<<" "<<z<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
 }
     return 0;
 }
