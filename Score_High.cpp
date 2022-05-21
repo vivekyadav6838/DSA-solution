@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+// /*** @author Vivek Yadav ***/
+// #define for(i,n) for (int i = 0; i < n; ++i)
+// #define ll long long int
+// #define arr(n) int arr[n]
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+    int n;
+    cin>>n;
+   vector<int> ans;
+   for(int i=0;i<4;i++)
+   {  int x;
+       cin>>x;
+       ans.push_back(x);
+   }
+   sort(ans.begin(),ans.end());
+   cout<<ans[3]<<endl;
+}
+    return 0;
+}

@@ -6,19 +6,10 @@
 using namespace std;
 int main()
 {
-
-string s;
-cin>>s;
-int k;
-cin>>k;
-int n = s.length();
-string res="";
-for(int i=0;i<n;i++)
-{
-    if(int(s[i])-int(s[i+1])<=k && int(s[i])-int(s[i+1])>=0 )
-    res+=s[i];
-}
-cout<<res<<endl;
-
+ int x=5;
+ if(x++ == 5)
+ cout<<"Five"<<endl;
+ else if(++x== 6)
+ cout<<"Six"<<endl;
     return 0;
 }

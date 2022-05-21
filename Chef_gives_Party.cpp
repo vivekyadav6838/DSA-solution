@@ -6,19 +6,18 @@
 using namespace std;
 int main()
 {
-
-string s;
-cin>>s;
-int k;
-cin>>k;
-int n = s.length();
-string res="";
-for(int i=0;i<n;i++)
-{
-    if(int(s[i])-int(s[i+1])<=k && int(s[i])-int(s[i+1])>=0 )
-    res+=s[i];
+int t;
+cin>>t;
+while(t--){
+    int n,x,k;
+    cin>>n>>x>>k;
+    if(n*x<=k)
+    {
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
 }
-cout<<res<<endl;
-
     return 0;
 }

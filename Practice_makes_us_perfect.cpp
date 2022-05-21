@@ -7,18 +7,18 @@ using namespace std;
 int main()
 {
 
-string s;
-cin>>s;
-int k;
-cin>>k;
-int n = s.length();
-string res="";
-for(int i=0;i<n;i++)
-{
-    if(int(s[i])-int(s[i+1])<=k && int(s[i])-int(s[i+1])>=0 )
-    res+=s[i];
-}
-cout<<res<<endl;
+    int w,x,y,z;
+    int count=0;
+    cin>>w>>x>>y>>z;
+    if(w>=10)
+    count++;
+    if(x>=10)
+    count++;
+    if(y>=10)
+    count++;
+    if(z>=10)
+    count++;
+    cout<<count<<endl;
 
     return 0;
 }
