@@ -1,0 +1,1 @@
+{"name":"Local: prefixsum","url":"c:\\Users\\Vivek\\Desktop\\DSA solution\\prefixsum.cpp","tests":[{"id":1656702562449,"input":"3\n1 4 1\n3\n1 1\n1 2\n0 2","output":"4\n5\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Vivek\\Desktop\\DSA solution\\prefixsum.cpp","group":"local","local":true}
